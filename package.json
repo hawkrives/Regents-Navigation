@@ -6,15 +6,12 @@
   "private": true,
   "repository": "",
   "license": "MIT",
-  "config": {
-    "webpack": "--progress --config .webpackrc"
-  },
   "scripts": {
-    "build": "env NODE_ENV=production webpack --production --bail $npm_package_config_webpack",
+    "build": "env NODE_ENV=production webpack --production --bail --progress --config .webpackrc",
     "clean": "rimraf build/",
     "karma": "karma start .karmarc --browsers Firefox --single-run",
     "lint": "eslint bin/ source/",
-    "start": "webpack-dev-server $npm_package_config_webpack",
+    "start": "webpack-dev-server --progress --config .webpackrc",
     "test": "ava test/*"
   },
   "dependencies": {
