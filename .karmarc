@@ -1,0 +1,32 @@
+/* eslint globals: "module" */
+// Karma configuration
+
+module.exports = function(config) {
+	config.set({
+		files: [
+			// each file acts as entry point for the webpack configuration
+			'test/*.js',
+		],
+
+		preprocessors: {
+			// add webpack as preprocessor
+			'test/**/*.test.js': ['webpack'],
+		},
+
+		// karma watches the test entry points (you don't need to specify the
+		// entry option). webpack watches dependencies.
+
+		// load the webpack configuration
+		webpack: require('./.webpackrc'),
+
+		webpackMiddleware: {
+			// webpack-dev-middleware configuration
+			noInfo: true,
+		},
+
+		plugins: [
+			require('karma-firefox-launcher'),
+			require('karma-webpack'),
+		],
+	})
+}

@@ -1,0 +1,25 @@
+.fira(@variant, @weight) {
+    @font-face{
+        font-family: 'Fira Sans';
+        src: local('Fira Sans @{variant}'),
+             url('../fonts/FiraSans-@{variant}.woff2') format('woff2'),
+             url('../fonts/FiraSans-@{variant}.woff') format('woff');
+        font-weight: $weight;
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'Fira Sans';
+        src: local('Fira Sans @{variant} Italic'),
+             url('../fonts/FiraSans-@{variant}Italic.woff2') format('woff2'),
+             url('../fonts/FiraSans-@{variant}Italic.woff') format('woff');
+        font-weight: $weight;
+        font-style: italic;
+    }
+}
+
+.fira('UltraLight', 200);
+.fira('Light', 300);
+.fira('Regular', 400);
+.fira('Medium', 500);
+.fira('SemiBold', 600);
+.fira('Bold', 700);
