@@ -145,25 +145,25 @@ if (isDev) {
 
 	config.module.loaders.push({
 		test: /\.css$/,
-		loader: 'style-loader!css-loader!postcss-loader',
+		loader: 'style-loader!css-loader?modules!postcss-loader?modules',
 	})
 
 	// Add optional loaders
 	config.module.loaders.push({
 		test: /\.less$/,
-		loader: 'style-loader!css-loader!postcss-loader!less-loader',
+		loader: 'style-loader!css-loader?modules!postcss-loader?modules!less-loader',
 	})
 }
 
 else if (isTest) {
 	config.module.loaders.push({
 		test: /\.css$/,
-		loader: 'style-loader!css-loader!postcss-loader',
+		loader: 'style-loader!css-loader?modules!postcss-loader?modules',
 	})
 
 	config.module.loaders.push({
 		test: /\.less$/,
-		loader: 'style-loader!css-loader!postcss-loader!less-loader',
+		loader: 'style-loader!css-loader?modules!postcss-loader?modules!less-loader',
 	})
 }
 
@@ -196,12 +196,12 @@ else {
 
 	config.module.loaders.push({
 		test: /\.css$/,
-		loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader'),
+		loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules!postcss-loader?modules'),
 	})
 
 	config.module.loaders.push({
 		test: /\.less$/,
-		loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!less-loader'),
+		loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules!postcss-loader?modules!less-loader'),
 	})
 }
 
