@@ -2,13 +2,13 @@ import React from 'react'
 
 //import styles from './button.less'
 
-let Button = React.createClass( {
+class Button extends React.Component {
 	render() {
 		return (
-		<div className= 'button'>
-			{this.props.name}
-		</div>
+			<button className='button'>
+				{this.props.children}
+			</button>
 		)
-	},
-})
+	}
+}
 export default Button

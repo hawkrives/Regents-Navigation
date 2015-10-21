@@ -6,11 +6,11 @@ import ReactDOM from 'react-dom'
 import Router, {Route, IndexRoute} from 'react-router'
 
 import App from './components/app'
-import HelloWorld from './components/hello-world'
+import MainMenu from './components/main-menu'
 
 const routes = (
 	<Route path='/' component={App}>
-		<IndexRoute component={HelloWorld} />
+		<IndexRoute component={MainMenu} />
 	</Route>
 )
 
