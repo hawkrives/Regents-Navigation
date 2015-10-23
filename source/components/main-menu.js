@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router'
 import Button from './button'
 import styles from './main-menu.less'
 
@@ -13,7 +14,7 @@ class MainMenu extends React.Component {
 				<h3 className={styles['main-menu']}> Main Menu </h3>
 				</div>
 				<div>
-				<Button>Start New Navigation</Button><br/>
+				<Button><Link to ='/createnewnavigation'>Start New Navigation</Link></Button><br/>
 				<Button>Start Saved Navigation</Button><br/>
 				<Button>Settings</Button><br/>
 				<Button>Quit</Button><br/>
