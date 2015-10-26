@@ -2,6 +2,8 @@ import React from 'react'
 import StartingLocation from './starting-location'
 import EndingLocation from './ending-location'
 import Button from './button'
+import MainMenuButton from './main-menu-button'
+import HelpButton from './help-button'
 import styles from './create-new-navigation.less'
 
 class CreateNewNavigation extends React.Component {
@@ -20,6 +22,10 @@ class CreateNewNavigation extends React.Component {
 				<div>
 				<Button>Common Destinations</Button> <br/>
 				<Button>Search</Button> <br/>
+				</div>
+				<div>
+				<MainMenuButton/> <br/>
+				<HelpButton/>
 				</div>
 			</div>
 			)
