@@ -1,6 +1,7 @@
 import React from 'react'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
+import SavedNavigationRow from './saved-navigation-row'
 import styles from './saved-navigation.less'
 
 class SavedNavigation extends React.Component {
@@ -19,9 +20,14 @@ class SavedNavigation extends React.Component {
 					</tr>
 					</thead>
 					<tbody>
-					<tr>
-						<td className={styles['border']}>Test Cell</td>
-					</tr>
+						<SavedNavigationRow>
+							<td>Test Start</td>
+							<td>Test Destination</td>
+						</SavedNavigationRow>
+						<SavedNavigationRow>
+							<td>Test Start 2</td>
+							<td>Test Destination 2</td>
+						</SavedNavigationRow> 
 					</tbody>
 				</table>
 				</div>
