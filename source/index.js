@@ -8,7 +8,7 @@ import Router, {Route, IndexRoute, Link} from 'react-router'
 import App from './components/app'
 import MainMenu from './components/main-menu'
 import CreateNewNavigation from './components/create-new-navigation'
-import SavedNavigation from './components/saved-navigation'
+import SavedNavigationScreen from './components/saved-navigation-screen'
 import Help from './components/help'
 
 const routes = (
@@ -16,7 +16,7 @@ const routes = (
 		<IndexRoute component={MainMenu} />
 			<Route path='createnewnavigation' component={CreateNewNavigation} />
 			<Route path='help' component={Help} />
-			<Route path='savednavigation' component={SavedNavigation} />
+			<Route path='savednavigationscreen' component={SavedNavigationScreen} />
 	</Route>
 )
 
