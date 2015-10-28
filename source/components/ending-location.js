@@ -8,7 +8,7 @@ class EndingLocation extends React.Component {
 				Enter your destination. <br/>
 				<input type='text' name='endinglocation'/>
 			</form>
-			)
+		)
 	}
 }
 

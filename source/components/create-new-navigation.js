@@ -11,24 +11,24 @@ class CreateNewNavigation extends React.Component {
 		return (
 			<div>
 				<div>
-				<h1 className={styles['create-new-navigation']}>Create New Navigation</h1>
+					<h1 className={styles['create-new-navigation']}>Create New Navigation</h1>
 				</div>
 				<div>
-				<StartingLocation/>
+					<StartingLocation/>
 				</div>
 				<div>
-				<EndingLocation/>
+					<EndingLocation/>
 				</div>
 				<div>
-				<Button>Common Destinations</Button> <br/>
-				<Button>Search</Button> <br/>
+					<Button>Common Destinations</Button> <br/>
+					<Button>Search</Button> <br/>
 				</div>
 				<div>
-				<MainMenuButton/> <br/>
-				<HelpButton/>
+					<MainMenuButton/> <br/>
+					<HelpButton/>
 				</div>
 			</div>
-			)
+		)
 	}
 }
 

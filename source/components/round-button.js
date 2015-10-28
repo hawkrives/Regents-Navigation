@@ -7,7 +7,7 @@ class RoundButton extends React.Component {
 			<button className={styles['round-button']}>
 				{this.props.children}
 			</button>
-			)
+		)
 	}
 }
 
