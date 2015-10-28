@@ -6,11 +6,18 @@ import ReactDOM from 'react-dom'
 import Router, {Route, IndexRoute} from 'react-router'
 
 import App from './components/app'
-import HelloWorld from './components/hello-world'
+import Start from './components/start'
+import Navigator from './components/navigator'
+import Settings from './components/settings'
 
 const routes = (
 	<Route path='/' component={App}>
-		<IndexRoute component={HelloWorld} />
+		<IndexRoute component={Start} />
+		<Route path='navigate'>
+			<IndexRoute component={Navigator} />
+			<Route path='to' component={Navigator} />
+		</Route>
+		<Route path='settings' component={Settings} />
 	</Route>
 )
 

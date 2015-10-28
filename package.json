@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Regents-Navigation",
   "version": "0.0.1",
   "description": "",
   "main": "source/index.js",
@@ -9,10 +9,8 @@
   "scripts": {
     "build": "env NODE_ENV=production webpack --production --bail --progress --config .webpackrc",
     "clean": "rimraf build/",
-    "karma": "karma start .karmarc --browsers Firefox --single-run",
-    "lint": "eslint bin/ source/",
     "start": "webpack-dev-server --progress --config .webpackrc",
-    "test": "ava test/*"
+    "test": "eslint source/ && karma start .karmarc --browsers Firefox --single-run && npm run build"
   },
   "dependencies": {
     "babel-runtime": "5.8.25",
