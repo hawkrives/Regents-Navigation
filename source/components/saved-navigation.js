@@ -1,9 +1,14 @@
 import React from 'react'
+import SavedNavigationTable from './saved-navigation-table'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
 import styles from './saved-navigation.less'
-import range from 'lodash/utility/range'
-import map from 'lodash/collection/map'
+
+const data = [
+	{start: 'RNS 202', end: 'RNS 203'},
+	{start: 'RNS 250', end: 'RNS 201'},
+	{start: 'RNS 150', end: 'RNS 202'},
+]
 
 class SavedNavigation extends React.Component {
 	render() {
@@ -12,24 +17,7 @@ class SavedNavigation extends React.Component {
 				<div>
 					<h1 className={styles['heading']}>Saved Sessions</h1>
 				</div>
-				<div>
-					<table className={styles['table']}>
-						<thead>
-						<tr>
-							<th className={styles['border']}>Start Point</th>
-							<th className={styles['border']}>Destination</th>
-						</tr>
-						</thead>
-						<tbody>
-							{map(range(2), i =>
-								<tr>
-									<td>Test Start {i+1}</td>
-									<td>Test Destination {i+1}</td>
-								</tr>
-							)}
-						</tbody>
-					</table>
-				</div>
+				<SavedNavigationTable data={data} />
 				<div>
 					<MainMenuButton/>
 					<HelpButton/>
