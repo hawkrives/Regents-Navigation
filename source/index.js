@@ -11,6 +11,8 @@ import CreateNewNavigation from './components/create-new-navigation'
 import SavedNavigationScreen from './components/saved-navigation-screen'
 import CreateNewNavigationHelp from './components/create-new-navigation-help'
 import SavedNavigationHelp from './components/saved-navigation-help'
+import Settings from './components/settings'
+import SettingsHelp from './components/settings-help'
 
 const routes = (
 	<Route path='/' component={App}>
@@ -19,6 +21,8 @@ const routes = (
 				<Route path='createnewnavigationhelp' component={CreateNewNavigationHelp} />
 			<Route path='savednavigationscreen' component={SavedNavigationScreen} />
 				<Route path='savednavigationhelp' component={SavedNavigationHelp} />
+			<Route path='settings' component={Settings} />
+				<Route path='settingshelp' component={SettingsHelp} />
 	</Route>
 )
 
