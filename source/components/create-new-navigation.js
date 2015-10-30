@@ -26,7 +26,7 @@ class CreateNewNavigation extends React.Component {
 				</div>
 				<div>
 					<MainMenuButton/> <br/>
-					<HelpButton/>
+					<HelpButton link_to='/createnewnavigationhelp'/>
 				</div>
 			</div>
 		)
