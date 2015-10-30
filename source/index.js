@@ -9,14 +9,16 @@ import App from './components/app'
 import MainMenu from './components/main-menu'
 import CreateNewNavigation from './components/create-new-navigation'
 import SavedNavigationScreen from './components/saved-navigation-screen'
-import Help from './components/help'
+import CreateNewNavigationHelp from './components/create-new-navigation-help'
+import SavedNavigationHelp from './components/saved-navigation-help'
 
 const routes = (
 	<Route path='/' component={App}>
 		<IndexRoute component={MainMenu} />
 			<Route path='createnewnavigation' component={CreateNewNavigation} />
-			<Route path='help' component={Help} />
+				<Route path='createnewnavigationhelp' component={CreateNewNavigationHelp} />
 			<Route path='savednavigationscreen' component={SavedNavigationScreen} />
+				<Route path='savednavigationhelp' component={SavedNavigationHelp} />
 	</Route>
 )
 
