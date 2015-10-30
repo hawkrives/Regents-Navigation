@@ -17,6 +17,7 @@ class MainMenu extends React.Component {
 				<Button><Link to ='/createnewnavigation'>Start New Navigation</Link></Button><br/>
 				<Button><Link to='/savednavigationscreen'>Start Saved Navigation</Link></Button><br/>
 				<Button>Settings</Button><br/>
+				<Button>Help</Button><br/>
 				<Button>Quit</Button><br/>
 				</div>
 			</div>
