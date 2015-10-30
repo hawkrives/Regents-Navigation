@@ -28,7 +28,7 @@ class SavedNavigationScreen extends React.Component {
 				</div>
 				<div>
 					<MainMenuButton/>
-					<HelpButton/>
+					<HelpButton link_to= '/savednavigationhelp'/>
 				</div>
 			</div>
 		)
