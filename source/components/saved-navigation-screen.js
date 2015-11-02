@@ -2,7 +2,7 @@ import React from 'react'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
 import SavedNavigation from './saved-navigation'
-import styles from './saved-navigation-screen.less'
+import styles from './our-styles.less'
 //import range from 'lodash/utility/range'
 //import map from 'lodash/collection/map'
 
@@ -17,8 +17,8 @@ class SavedNavigationScreen extends React.Component {
 					<table className={styles['table']}>
 						<thead>
 						<tr>
-							<th className={styles['border']}>Start Point</th>
-							<th className={styles['border']}>Destination</th>
+							<th>Start Point</th>
+							<th>Destination</th>
 						</tr>
 						</thead>
 						<tbody>
