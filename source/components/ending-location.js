@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ending-location.less'
+import styles from './our-styles.less'
 
 class EndingLocation extends React.Component {
 	render() {
