@@ -1,6 +1,5 @@
 import React from 'react'
 import SettingsButton from './settings-button'
-import TextSizeButton from './text-size-button'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
 import Icon from './icon'
@@ -17,7 +16,9 @@ class Settings extends React.Component {
 				</div>
 				<div>
 					<h3 className= {styles['settings-type']}>Text Size</h3>
-					<TextSizeButton type = 'subtract'><Icon name='ionicon-minus'/></TextSizeButton><SettingsButton>Default</SettingsButton><SettingsButton><Icon name='ionicon-plus'/></SettingsButton>
+					<h4 className= {styles['text-size-type']}>To adjust the size of the text, please do one of the following:</h4>
+					<p className= {styles['text-size-type']}>On a Mac, hold <button>Command </button> while pressing either <button><Icon name='ionicon-plus'/></button> or <button><Icon name='ionicon-minus'/></button>.</p>
+					<p className= {styles['text-size-type']}>On a Windows, hold <button>Control </button> while pressing either <button><Icon name='ionicon-plus'/></button> or <button><Icon name='ionicon-minus'/></button>.</p>
 				</div>
 				<div>
 					<MainMenuButton/> <br/>
