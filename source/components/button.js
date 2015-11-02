@@ -1,6 +1,5 @@
 import React from 'react'
-
-import styles from './button.less'
+import styles from './our-styles.less'
 
 class Button extends React.Component {
 	render() {
