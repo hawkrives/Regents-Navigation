@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './round-button.less'
+import styles from './our-styles.less'
 
 class RoundButton extends React.Component {
 	render() {

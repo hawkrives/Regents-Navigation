@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './starting-location.less'
+import styles from './our-styles.less'
 
 class StartingLocation extends React.Component {
 	render() {

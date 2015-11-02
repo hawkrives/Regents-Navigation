@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './saved-navigation-help.less'
+import styles from './our-styles.less'
 import BackButton from './back-button'
 
 class SavedNavigationHelp extends React.Component {

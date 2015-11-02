@@ -13,6 +13,8 @@ import CreateNewNavigationHelp from './components/create-new-navigation-help'
 import SavedNavigationHelp from './components/saved-navigation-help'
 import Settings from './components/settings'
 import SettingsHelp from './components/settings-help'
+import MainMenuHelp from './components/main-menu-help'
+import About from './components/about'
 
 const routes = (
 	<Route path='/' component={App}>
@@ -23,6 +25,8 @@ const routes = (
 				<Route path='savednavigationhelp' component={SavedNavigationHelp} />
 			<Route path='settings' component={Settings} />
 				<Route path='settingshelp' component={SettingsHelp} />
+			<Route path='mainmenuhelp' component={MainMenuHelp} />
+			<Route path='about' component={About} />
 	</Route>
 )
 
