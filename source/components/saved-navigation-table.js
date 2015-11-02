@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './saved-navigation-table.less'
+import styles from './our-styles.less'
 
 class SavedNavigationTable extends React.Component {
 	render() {
