@@ -4,7 +4,7 @@ import EndingLocation from './ending-location'
 import Button from './button'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
-import styles from './create-new-navigation.less'
+import styles from './our-styles.less'
 
 class CreateNewNavigation extends React.Component {
 	render() {
