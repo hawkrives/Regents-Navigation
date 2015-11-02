@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 import Button from './button'
-import styles from './main-menu.less'
+import styles from './our-styles.less'
 
 class MainMenu extends React.Component {
 	render() {
@@ -14,11 +14,11 @@ class MainMenu extends React.Component {
 				<h3 className={styles['main-menu']}> Main Menu </h3>
 				</div>
 				<div>
-				<Button><Link to ='/createnewnavigation'>Start New Navigation</Link></Button><br/>
+				<Button><Link to='/createnewnavigation'>Start New Navigation</Link></Button><br/>
 				<Button><Link to='/savednavigationscreen'>Start Saved Navigation</Link></Button><br/>
 				<Button><Link to='/settings'>Settings</Link></Button><br/>
-				<Button>Help</Button><br/>
-				<Button>Quit</Button><br/>
+				<Button><Link to='/mainmenuhelp'>Help</Link></Button><br/>
+				<Button><Link to='/about'>About</Link></Button><br/>
 				</div>
 			</div>
 			)
