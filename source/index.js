@@ -15,6 +15,8 @@ import Settings from './components/settings'
 import SettingsHelp from './components/settings-help'
 import MainMenuHelp from './components/main-menu-help'
 import About from './components/about'
+import MainNavigation from './components/main-navigation'
+import MainNavigationHelp from './components/main-navigation-help'
 
 const routes = (
 	<Route path='/' component={App}>
@@ -27,6 +29,8 @@ const routes = (
 				<Route path='settingshelp' component={SettingsHelp} />
 			<Route path='mainmenuhelp' component={MainMenuHelp} />
 			<Route path='about' component={About} />
+			<Route path='navigation' component={MainNavigation} />
+				<Route path='mainnavigationhelp' component={MainNavigationHelp} />
 	</Route>
 )
 

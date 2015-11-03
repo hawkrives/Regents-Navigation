@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import StartingLocation from './starting-location'
 import EndingLocation from './ending-location'
 import Button from './button'
@@ -22,7 +23,7 @@ class CreateNewNavigation extends React.Component {
 				<div>
 					<Button>Common Destinations</Button> <br/>
 					<Button>Search</Button> <br/> <br/>
-					<Button>Start Navigation</Button> <br/>
+					<Button><Link to='/navigation'>Start Navigation</Link></Button> <br/>
 				</div>
 				<div>
 					<MainMenuButton/> <br/>
