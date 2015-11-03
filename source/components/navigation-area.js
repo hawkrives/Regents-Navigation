@@ -1,10 +1,13 @@
 import React from 'react'
+import NavigationMap from './navigation-map'
+import FloorMap from './floor-map'
 
 class NavigationArea extends React.Component {
 	render() {
 		return(
 			<div>
-				<h1>Navigation</h1>
+				<NavigationMap/>
+				<FloorMap/>
 			</div>
 			)
 	}
