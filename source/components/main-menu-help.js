@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './our-styles.less'
-import BackButton from './back-button'
+import MainMenuButton from './main-menu-button'
 
 class MainMenuHelp extends React.Component {
 	render() {
@@ -10,7 +10,7 @@ class MainMenuHelp extends React.Component {
 					<h1 className={styles['help']}>This is where the main menu help text will go!</h1>
 				</div>
 				<div>
-					<BackButton link_to='/'/>
+					<MainMenuButton link_to='/'/>
 				</div>
 			</div>
 		)
