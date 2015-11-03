@@ -20,6 +20,9 @@ class MainMenu extends React.Component {
 				<Button><Link to='/mainmenuhelp'>Help</Link></Button><br/>
 				<Button><Link to='/about'>About</Link></Button><br/>
 				</div>
+				<div>
+				<h3 className={styles['main-menu']}> To quit, close the browser window. </h3>
+				</div>
 			</div>
 			)
 	}
