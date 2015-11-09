@@ -21,7 +21,7 @@ class CreateNewNavigation extends React.Component {
 					<EndingLocation/>
 				</div>
 				<div>
-					<Button>Common Destinations</Button> <br/>
+					<Button><Link to='/commondestinations'>Common Destinations</Link></Button> <br/>
 					<Button>Search</Button> <br/> <br/>
 					<Button><Link to='/navigation'>Start Navigation</Link></Button> <br/>
 				</div>

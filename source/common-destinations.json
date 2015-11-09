@@ -1,0 +1,5 @@
+[{"name": "RNS 202", "category": "lab", "other": [{"class": [{"name": "HiPerCiC", "id": "ID 259"}]}]},
+ {"name": "RNS 203", "category": "classroom", "other": []},
+ {"name": "RNS 222", "category": "office", "other": [{"professor":"Gary Muir"}]},
+ {"name": "RMS 201", "category": ["lab", "office"], "other": [{"professor": "Olaf Hall-Holt"}]}
+ ]

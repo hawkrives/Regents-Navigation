@@ -8,6 +8,7 @@ import Router, {Route, IndexRoute, Link} from 'react-router'
 import App from './components/app'
 import MainMenu from './components/main-menu'
 import CreateNewNavigation from './components/create-new-navigation'
+import CommonDestinationsScreen from './components/common-destinations-screen'
 import SavedNavigationScreen from './components/saved-navigation-screen'
 import CreateNewNavigationHelp from './components/create-new-navigation-help'
 import SavedNavigationHelp from './components/saved-navigation-help'
@@ -23,6 +24,7 @@ const routes = (
 		<IndexRoute component={MainMenu} />
 			<Route path='createnewnavigation' component={CreateNewNavigation} />
 				<Route path='createnewnavigationhelp' component={CreateNewNavigationHelp} />
+				<Route path='commondestinations' component={CommonDestinationsScreen} />
 			<Route path='savednavigationscreen' component={SavedNavigationScreen} />
 				<Route path='savednavigationhelp' component={SavedNavigationHelp} />
 			<Route path='settings' component={Settings} />
