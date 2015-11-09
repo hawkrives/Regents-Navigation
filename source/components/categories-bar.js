@@ -13,9 +13,6 @@ class CategoriesBar extends React.Component {
 			</div>
 			)
 	}
-	onClick() {
-
-	}
 }
 
 export default CategoriesBar
