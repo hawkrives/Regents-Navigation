@@ -3,6 +3,7 @@ import MenuBar from './menu-bar'
 import NavigationArea from './navigation-area'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
+import BackButton from './back-button'
 
 class MainNavigation extends React.Component {
 	render() {
@@ -11,8 +12,9 @@ class MainNavigation extends React.Component {
 				<MenuBar/>
 				<NavigationArea/>
 				<div>
+					<BackButton link_to='/createnewnavigation'/>
 					<MainMenuButton/>
-					<HelpButton links_to='/mainnavigationhelp'/>
+					<HelpButton link_to='/mainnavigationhelp'/>
 				</div>
 			</div>
 			)

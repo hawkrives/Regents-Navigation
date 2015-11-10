@@ -3,6 +3,7 @@ import CategoriesBar from './categories-bar'
 import CommonDestination from './common-destination'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
+import BackButton from './back-button'
 import styles from './our-styles.less'
 //import destinations from "../common-destinations.json"
 
@@ -24,8 +25,9 @@ class CommonDestinationsScreen extends React.Component {
 						</table>
 					</div>
 					<div>
-						<MainMenuButton/>
-						<HelpButton link_to=''/>
+					<BackButton link_to='/createnewnavigation'/>
+					<MainMenuButton/>
+					<HelpButton link_to=''/>
 					</div>
 				</div>
 			)

@@ -3,6 +3,7 @@ import CategoriesBar from './categories-bar'
 import SearchDestination from './search-destination'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
+import BackButton from './back-button'
 import styles from './our-styles.less'
 
 class SearchScreen extends React.Component {
@@ -26,6 +27,7 @@ class SearchScreen extends React.Component {
 					</table>
 				</div>
 				<div>
+					<BackButton link_to='/createnewnavigation'/>
 					<MainMenuButton/>
 					<HelpButton/>
 				</div>
