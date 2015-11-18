@@ -4,6 +4,7 @@ import SearchDestination from './search-destination'
 import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
 import BackButton from './back-button'
+import retrieveJson from '../state/retrieve-json'
 import styles from './our-styles.less'
 
 class SearchScreen extends React.Component {
@@ -31,6 +32,7 @@ class SearchScreen extends React.Component {
 					<MainMenuButton/>
 					<HelpButton/>
 				</div>
+				<script>{retrieveJson('location')}</script>
 			</div>
 		)
 	}
