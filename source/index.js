@@ -4,6 +4,7 @@ import 'isomorphic-fetch'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Router, {Route, IndexRoute, Link} from 'react-router'
+import {Provider} from 'react-redux'
 
 import App from './components/app'
 import MainMenu from './components/main-menu'
@@ -19,6 +20,9 @@ import MainMenuHelp from './components/main-menu-help'
 import About from './components/about'
 import MainNavigation from './components/main-navigation'
 import MainNavigationHelp from './components/main-navigation-help'
+
+import store from './state/store'
+
 
 const routes = (
 	<Route path='/' component={App}>
@@ -41,4 +45,5 @@ const routes = (
 // run it
 console.log('3. 2.. 1... Blast off! 🚀')
 
-ReactDOM.render(<Router>{routes}</Router>, document.getElementById('app'))
+ReactDOM.render(<Provider store={store}>
+	<Router>{routes}</Router></Provider>, document.getElementById('app'))
