@@ -10,7 +10,7 @@ function addClassLocation(classObject) {
 
 	if (json.location != undefined) {
 		let classRecord = new RoomInfo({room: json.location, filter: 'Classroom', class: json.name})
-		return {type: 'ADD_LOCATION', classRecord}
+		return {type: 'ADD_LOCATION', roomInfo: classRecord}
 	}
 	console.log('No room specified.')
 }
