@@ -1,5 +1,6 @@
 import { createStore } from 'redux'
 import {List, Map} from 'immutable'
+import retrieveJson from './retrieve-json'
 //import RoomInfo from './add-location'
 
 let INITIAL_STATE = Map(
@@ -24,5 +25,8 @@ function reducer(state = INITIAL_STATE, action) {
 }
 
 const store = createStore(reducer)
+
+let classJson = retrieveJson('https://www.stolaf.edu/people/rives/courses/terms/20151.json')
+console.log("We've pulled data:", classJson)
 
 export default store
