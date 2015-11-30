@@ -27,18 +27,18 @@ import store from './state/store'
 const routes = (
 	<Route path='/' component={App}>
 		<IndexRoute component={MainMenu} />
-			<Route path='createnewnavigation' component={CreateNewNavigation} />
-				<Route path='createnewnavigationhelp' component={CreateNewNavigationHelp} />
-				<Route path='commondestinations' component={CommonDestinationsScreen} />
-				<Route path='search' component={SearchScreen} />
-			<Route path='savednavigationscreen' component={SavedNavigationScreen} />
-				<Route path='savednavigationhelp' component={SavedNavigationHelp} />
-			<Route path='settings' component={Settings} />
-				<Route path='settingshelp' component={SettingsHelp} />
-			<Route path='mainmenuhelp' component={MainMenuHelp} />
-			<Route path='about' component={About} />
-			<Route path='navigation' component={MainNavigation} />
-				<Route path='mainnavigationhelp' component={MainNavigationHelp} />
+		<Route path='createnewnavigation' component={CreateNewNavigation} />
+			<Route path='createnewnavigationhelp' component={CreateNewNavigationHelp} />
+			<Route path='commondestinations' component={CommonDestinationsScreen} />
+			<Route path='search' component={SearchScreen} />
+		<Route path='savednavigationscreen' component={SavedNavigationScreen} />
+			<Route path='savednavigationhelp' component={SavedNavigationHelp} />
+		<Route path='settings' component={Settings} />
+			<Route path='settingshelp' component={SettingsHelp} />
+		<Route path='mainmenuhelp' component={MainMenuHelp} />
+		<Route path='about' component={About} />
+		<Route path='navigation' component={MainNavigation} />
+			<Route path='mainnavigationhelp' component={MainNavigationHelp} />
 	</Route>
 )
 
