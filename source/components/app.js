@@ -4,41 +4,50 @@ import {connect} from 'react-redux'
 
 import {getData} from '../state/store'
 
+export default function app(props) {
+	return (
+		<div>
+			{cloneElement(props.children)}
+		</div>
+	)
+}
+
+
 /* Base component for the application */
-export class App extends Component {
-	static propTypes = {
-		dispatch: PropTypes.func.isRequired,
-		store: PropTypes.object.isRequired,
-	}
-	render() {
-		console.log(this.props.store.toJS())
-		if (!this.props.store.get('courses')) {
-			return (<div>
-				nothing 
-				<button onClick={() => this.props.dispatch(getData())}>fetch</button>
-			</div>)
-		}
-		return (
-			<ul>
-				{this.props.store
-					.get('courses')
-					.get(20151)
-					.map(c => JSON.stringify(c))
-					.map((c, i) => <li key={i}>{c}</li>)}
-			</ul>
-		)
-			/*<div>
-				{cloneElement(this.props.children)}
-			</div>*/
-	}
-}
+// export default class App extends Component {
+// 	// static propTypes = {
+// 	// 	dispatch: PropTypes.func.isRequired,
+// 	// 	store: PropTypes.object.isRequired,
+// 	// }
+// 	render() {
+// 		// console.log(this.props.store.toJS())
+// 		// if (!this.props.store.get('courses')) {
+// 		// 	return (<div>
+// 		// 		nothing 
+// 		// 		<button onClick={() => this.props.dispatch(getData())}>fetch</button>
+// 		// 	</div>)
+// 		// }
+// 		// return (
+// 		// 	<ul>
+// 		// 		{this.props.store
+// 		// 			.get('courses')
+// 		// 			.get(20151)
+// 		// 			.map(c => JSON.stringify(c))
+// 		// 			.map((c, i) => <li key={i}>{c}</li>)}
+// 		// 	</ul>
+// 		// )
+// 			<div>
+// 				{cloneElement(this.props.children)}
+// 			</div>
+// 	}
+// }
 
-/* @param state= The redux state of the application
-   @return state mapped to the prop store */
-function mapStateToProps(state) {
-	return {
-		store: state,
-	}
-}
+// /* @param state= The redux state of the application
+//    @return state mapped to the prop store */
+// // function mapStateToProps(state) {
+// // 	return {
+// // 		store: state,
+// // 	}
+// // }
 
-export default connect(mapStateToProps)(App)
+// // export default connect(mapStateToProps)(App)

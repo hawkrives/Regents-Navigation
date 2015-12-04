@@ -5,7 +5,9 @@ import React from 'react'
 class FloorMap extends React.Component {
 	render() {
 		return(
-			<p>This will be the 2D floor map</p>
+			<svg width='200' height='200' view=''>
+				<rect width='100%' height='100%' />
+			</svg>
 			)
 	}
 }
