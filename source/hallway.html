@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+	<title>WebGL Hallway Extension</title>
+	<!--<link rel="stylesheet" href="style.css">-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <style>
+        .instructions dt
+{
+        color: black;
+        font-weight: bold;
+}
+        .instructions dd
+{
+        color: blue;
+        font-weight: bold;
+}
+	</style>
+</head>
+
+<body>
+	<main>
+	    <h2 class="title">WebGL Hallway Extension</h2>
+	    <canvas id="glCanvas" width="700" height="500"></canvas>
+	</main>
+
+    <dl class="instructions">
+        <dt><kbd>Page Up</kbd> / <kbd>Page Down</kbd></dt><dd>Pitch up/down</dd>
+        <dt><kbd>W</kbd> / <kbd>Up Arrow</kbd></dt><dd>Move Forward</dd>
+        <dt><kbd>S</kbd> / <kbd>Down Arrow</kbd></dt><dd>Move Backward</dd>
+        <dt><kbd>A</kbd> / <kbd>Left Arrow</kbd></dt><dd>Rotate (yaw) Left</dd>
+        <dt><kbd>D</kbd> / <kbd>Right Arrow</kbd></dt><dd>Rotate (yaw) Right</dd>
+        <dt><kbd>R</kbd></dt><dd>Reset world coordinates</dd>
+    </dl>
+
+    <div class="controls">
+    	<svg id="jStickOne" height="110" width="110">
+			<circle cx="55" cy="55" r="50" stroke="black" stroke-width="5" id="jStickOneCircle" fill="red"></circle>
+			Sorry, your browser does not support inline SVG.
+		</svg>
+    </div>
+
+    <script id="shader-fs" type="x-shader/x-fragment">
+        precision mediump float;
+
+        varying vec2 vTextureCoord;
+
+        uniform sampler2D uSampler;
+
+        void main(void) {
+            gl_FragColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));
+        }
+    </script>
+
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 aVertexPosition;
+        attribute vec2 aTextureCoord;
+
+        uniform mat4 uMVMatrix;
+        uniform mat4 uPMatrix;
+
+        varying vec2 vTextureCoord;
+
+        void main(void) {
+            gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+            vTextureCoord = aTextureCoord;
+        }
+    </script>
+
+    <script src="gl-matrix.js"></script>
+    <script src="hallwayextension.js"></script>
+
+
+</body>
