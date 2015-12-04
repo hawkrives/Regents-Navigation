@@ -3,6 +3,7 @@ import cx from 'classnames'
 
 import styles from './icon.less'
 
+/* Ion icon codes */
 const icons = {
 	'ionicon-alert': '\uf101',
 	'ionicon-alert-circled': '\uf100',
@@ -739,6 +740,7 @@ const icons = {
 	'ionicon-xbox': '\uf30c',
 }
 
+/* Returns span containing the specified icon with the specified display style. */
 export default function Icon({className, name, style, type='inline'}={}) {
 	const display = type === 'inline'
 			? 'inline-block'

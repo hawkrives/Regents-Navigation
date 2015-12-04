@@ -7,6 +7,7 @@ import BackButton from './back-button'
 import styles from './our-styles.less'
 //import destinations from "../common-destinations.json"
 
+/* Page that displays common destinations within Regents */
 class CommonDestinationsScreen extends React.Component {
 	render() {
 		return(

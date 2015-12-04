@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './our-styles.less'
 import BackButton from './back-button'
 
+/* Displays help text for the create new navigation screen */
 class CreateNewNavigationHelp extends React.Component {
 	render() {
 		return (

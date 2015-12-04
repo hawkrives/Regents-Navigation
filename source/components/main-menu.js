@@ -3,6 +3,7 @@ import {Link} from 'react-router'
 import Button from './button'
 import styles from './our-styles.less'
 
+/* The main menu page. */
 class MainMenu extends React.Component {
 	render() {
 		return (

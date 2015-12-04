@@ -7,6 +7,7 @@ import MainMenuButton from './main-menu-button'
 import HelpButton from './help-button'
 import styles from './our-styles.less'
 
+/* Page for starting a new navigation. */
 class CreateNewNavigation extends React.Component {
 	render() {
 		return (

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './our-styles.less'
 
+/* Dissplays room category options */
 class CategoriesBar extends React.Component {
 	render() {
 		return(

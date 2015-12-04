@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './our-styles.less'
 import MainMenuButton from './main-menu-button'
 
+/* Help page for the main menu */
 class MainMenuHelp extends React.Component {
 	render() {
 		return (

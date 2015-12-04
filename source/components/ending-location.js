@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './our-styles.less'
 
+/* Ending location component */
 class EndingLocation extends React.Component {
 	render() {
 		return (

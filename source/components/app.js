@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 
 import {getData} from '../state/store'
 
+/* Base component for the application */
 export class App extends Component {
 	static propTypes = {
 		dispatch: PropTypes.func.isRequired,
@@ -32,6 +33,8 @@ export class App extends Component {
 	}
 }
 
+/* @param state= The redux state of the application
+   @return state mapped to the prop store */
 function mapStateToProps(state) {
 	return {
 		store: state,

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './our-styles.less'
 
+/* Rectangular button */
 class Button extends React.Component {
 	render() {
 		return (
