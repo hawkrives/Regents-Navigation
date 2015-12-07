@@ -9,7 +9,7 @@ class MainMenu extends React.Component {
 		return (
 			<div>
 				<div>
-				<h1 className ={styles['main-menu']}> Welcome to the St. Olaf Navigation System</h1>
+				<h1 className ={styles['heading']}> Welcome to the St. Olaf Regents Navigation System</h1>
 				</div>
 				<div>
 				<h3 className={styles['main-menu']}> Main Menu </h3>
@@ -20,9 +20,6 @@ class MainMenu extends React.Component {
 				<Button><Link to='/settings'>Settings</Link></Button><br/>
 				<Button><Link to='/mainmenuhelp'>Help</Link></Button><br/>
 				<Button><Link to='/about'>About</Link></Button><br/>
-				</div>
-				<div>
-				<h3 className={styles['main-menu']}> If you need help to quit, we can't help you. </h3>
 				</div>
 			</div>
 			)
