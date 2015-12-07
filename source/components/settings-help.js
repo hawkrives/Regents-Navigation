@@ -7,7 +7,19 @@ class SettingsHelp extends React.Component {
 		return (
 			<div>
 				<div>
-					<h1 className={styles['help']}>This is where the settings help text will go!</h1>
+					<h1 className={styles['heading']}>Settings Help</h1>
+					<h2 className={styles['help-header']}> What do the color scheme buttons do? </h2>
+						<p className={styles['help-text']}> The color scheme buttons allow a user to change the color scheme
+						of the application. 
+							<ul>
+								<li>The default is the color scheme the designers created. </li>
+								<li>The red/green color scheme is meant for individuals with red or green color blindness. </li>
+								<li>The custom color scheme allows the user to create their own color scheme. </li>
+							</ul>
+						</p>
+					<h2 className={styles['help-header']}> What are the text size instructions for? </h2>
+						<p className={styles['help-text']}> The text size instructions allow a user to adjust the size
+						of the text displayed on their computer. </p>
 				</div>
 				<div>
 					<BackButton link_to='/settings'/>

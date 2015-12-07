@@ -8,7 +8,16 @@ class MainMenuHelp extends React.Component {
 		return (
 			<div>
 				<div>
-					<h1 className={styles['help']}>This is where the main menu help text will go!</h1>
+					<h1 className={styles['heading']}>Main Menu Help</h1>
+					<h2 className={styles['help-header']}> What do the buttons do? </h2>
+						<h3> Start New Navigation </h3>
+							<p className={styles['help-text']}> The Start New Navigation button brings the user to a screen that allows them to create a new route.</p>
+						<h3> Start Saved Navigation </h3>
+							<p className={styles['help-text']}> The Start Saved Navigation button brings the user to a screen that allows them to choose a previous route. </p>
+						<h3> Settings </h3>
+							<p className={styles['help-text']}> The Settings button brings the user to a page where they can adjust the color scheme this application uses and instructions on how to change the text size. </p>
+						<h3> About </h3>
+							<p className={styles['help-text']}> The About button brings the user to a page describing the designers of this application and the intended use of this application. </p>
 				</div>
 				<div>
 					<MainMenuButton link_to='/'/>
