@@ -13,7 +13,7 @@ class CreateNewNavigation extends React.Component {
 		return (
 			<div>
 				<div>
-					<h1 className={styles['create-new-navigation']}>Create New Navigation</h1>
+					<h1 className={styles['heading']}>Create New Navigation</h1>
 				</div>
 				<div>
 					<StartingLocation/>

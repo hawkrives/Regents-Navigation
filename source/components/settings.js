@@ -9,7 +9,7 @@ class Settings extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1 className= {styles['settings']}>Settings</h1>
+				<h1 className= {styles['heading']}>Settings</h1>
 				<div>
 					<h2 className= {styles['settings-type']}>Color Scheme</h2>
 					<SettingsButton>Default</SettingsButton><SettingsButton>Red/Green</SettingsButton><SettingsButton>Custom</SettingsButton>

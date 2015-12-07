@@ -8,7 +8,7 @@ class About extends React.Component {
 		return (
 			<div>
 				<div>
-					<h1 className={styles['about']}>About</h1>
+					<h1 className={styles['heading']}>About</h1>
 				</div>
 				<div>
 					<p className = {styles['about-text']}>
