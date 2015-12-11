@@ -13,7 +13,6 @@ let INITIAL_STATE = Map([
 ])
 
 function addLocation(locationState, location) {
-
 	return locationState.mergeIn(
 		['possibleDestinations', 'filters', location.filter ],
 		List() //value to assign if not initialized
@@ -26,7 +25,7 @@ function reducer(state = INITIAL_STATE, action) {
 		case ADD_LOCATION: {
 			return state.updateIn(
 				['possibleDestinations', 'filter'], 
-				filterState => addLocation(filterState, action.roomInfo))
+				filterState => addLocation(filterState, payload.roomInfo))
 		}
 		case RETRIEVE_JSON: {
 			console.log('RETRIEVE_JSON', payload)
@@ -41,16 +40,9 @@ function reducer(state = INITIAL_STATE, action) {
 	return state
 }
 
-const store = applyMiddleware(promiseMiddleware)(createStore)(reducer)
+// let createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(createStore)
+// const store = createStoreWithMiddleware(reducer)
 
-export function getData() {
-	return {
-		type: RETRIEVE_JSON,
-		payload: retrieveJson('https://www.stolaf.edu/people/rives/courses/terms/20151.json').then(data => ({
-			data,
-			term: 20151,
-		})),
-	}
-}
+const store = applyMiddleware(promiseMiddleware)(createStore)(reducer)
 
 export default store

@@ -7,7 +7,7 @@ import Icon from './icon'
 class HelpButton extends React.Component {
 	render() {
 		return (
-			<RoundButton><Link to={this.props.link_to}><Icon name='ionicon-help'/></Link></RoundButton>
+			<RoundButton><Link to={this.props.link_to}><Icon name='ionicon-help' type='inline'/></Link></RoundButton>
 		)
 	}
 }
