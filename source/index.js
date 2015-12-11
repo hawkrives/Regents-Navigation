@@ -3,7 +3,7 @@ import 'isomorphic-fetch'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Router, {Route, IndexRoute, Link} from 'react-router'
+import Router, {Route, IndexRoute} from 'react-router'
 import {Provider} from 'react-redux'
 
 import App from './components/app'
@@ -20,6 +20,7 @@ import MainMenuHelp from './components/main-menu-help'
 import About from './components/about'
 import MainNavigation from './components/main-navigation'
 import MainNavigationHelp from './components/main-navigation-help'
+import FloorMap from './components/floor-map'
 
 import store from './state/store'
 
@@ -27,6 +28,7 @@ import store from './state/store'
 const routes = (
 	<Route path='/' component={App}>
 		<IndexRoute component={MainMenu} />
+		<Route path='floor-map' component={FloorMap} />
 		<Route path='createnewnavigation' component={CreateNewNavigation} />
 			<Route path='createnewnavigationhelp' component={CreateNewNavigationHelp} />
 			<Route path='commondestinations' component={CommonDestinationsScreen} />
