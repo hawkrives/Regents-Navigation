@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Regents-Navigation",
   "version": "0.0.1",
   "description": "",
   "main": "source/index.js",
@@ -7,11 +7,14 @@
   "repository": "",
   "license": "MIT",
   "scripts": {
+    "copy": "mkdir -p build/ && cpy 'source/images/**/*' build/images",
     "build": "env NODE_ENV=production webpack --production --bail --progress --config .webpackrc",
+    "prebuild": "npm run copy",
     "clean": "rimraf build/",
     "karma": "karma start .karmarc --browsers Firefox --single-run",
     "lint": "eslint bin/ source/",
     "start": "webpack-dev-server --progress --config .webpackrc",
+    "prestart": "npm run copy",
     "test": "ava test/*"
   },
   "dependencies": {
@@ -39,6 +42,7 @@
     "babel-plugin-inline-package-json": "1.0.1",
     "babel-plugin-react-display-name": "2.0.0",
     "babel-plugin-react-transform": "1.1.1",
+    "cpy": "3.4.1",
     "css-loader": "0.19.0",
     "eslint": "1.7.1",
     "eslint-plugin-react": "3.5.1",
