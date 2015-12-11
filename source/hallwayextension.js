@@ -142,10 +142,12 @@ function getShader(gl, id) {
 function getDataFromServer() {
 	// Create the ajax request
 	jQuery.post(
-		"http://rns202-3.cs.stolaf.edu:1234",
-		{query: "tile:113rossing"},
+		"http://rns202-6.cs.stolaf.edu:1234",
+		{query: "tile:169wray"},
 		function(data) {
+			//console.log(JSON.stringify(data))
 			bufferDataFromServer = JSON.parse(data);
+			//bufferDataFromServer = data
 			initTexture();
 		});
 }
@@ -186,7 +188,9 @@ function initBuffers() {
 
 function initTexture() {
 	for(var i=0;i<bufferDataFromServer.length;i++) {
+		//console.log(bufferDataFromServer[i])
 		var imageId = bufferDataFromServer[i].image;
+		
 		if(!imageTextures[imageId]) {
 			imageTextures[imageId] = createNewTexture(imageId);
 		}
@@ -202,7 +206,7 @@ function createNewTexture(imageId) {
 		initBuffers();
 	}
 	newImage.crossOrigin = "anonymous";
-	newImage.src = "http://rns202-2.cs.stolaf.edu:1234/CapstoneClient/images/" +imageId;
+	newImage.src = "http://rns202-6.cs.stolaf.edu:1234/CapstoneClient/images/" +imageId;
 	return texture;
 }
 
